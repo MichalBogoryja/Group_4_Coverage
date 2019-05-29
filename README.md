@@ -12,11 +12,11 @@ The aim of this project is to demonstrate multi-robot cooperation through a maze
 • Ubuntu 16.04 LTS (Xenial Xerus)
 
 • ROS Kinetic  
-3
+
 • V-REP PRO EDU 3.5.0 Linux 64
 
 • RVIZ
-023
+
 ## Installation
 
 Laptop with Linux: 
