@@ -4,8 +4,7 @@
 
 ## Introduction
 
-The aim of this project is to 
-
+The aim of this project is to demonstrate multi-robot cooperation through a maze in the VREP simulation program. We are to make them perform a coverage task, one of two methods of terrain traversability.
 
 
 ## System requirements
@@ -13,12 +12,11 @@ The aim of this project is to
 • Ubuntu 16.04 LTS (Xenial Xerus)
 
 • ROS Kinetic  
-
+3
 • V-REP PRO EDU 3.5.0 Linux 64
 
 • RVIZ
-
-
+023
 ## Installation
 
 Laptop with Linux: 
@@ -39,7 +37,7 @@ In order to run the system, following steps are to be executed:
    $ roscore
    ```
 
-2. Run V-REP
+2. Open a new Terminal & Run V-REP
 
    ```bash
    $ cd <VREP_folder_path>/
@@ -49,7 +47,7 @@ In order to run the system, following steps are to be executed:
    $ ./vrep.sh
    ```
 
-3. Run the node operating RGB point cloud for the first robot
+3. Open a new Terminal & Run the node operating RGB point cloud for the first robot
 
    ```bash
    $ cd coverage_ws
@@ -63,7 +61,7 @@ In order to run the system, following steps are to be executed:
    $ roslaunch rgb_pcd_kinect_fusion rgb_pcd_kinect_fusion_turtlebot1.launch
    ```
 
-4. Run the node operating RGB point cloud for the second robot
+4. Open a new Terminal & Run the node operating RGB point cloud for the second robot
 
    ```bash
    $ cd coverage_ws
@@ -76,7 +74,7 @@ In order to run the system, following steps are to be executed:
    ```bash
    $ roslaunch rgb_pcd_kinect_fusion rgb_pcd_kinect_fusion_turtlebot2.launch
    ```
-5. open the rviz
+5. Open a new Terminal & Run the rviz
 
    ```bash
    $ cd coverage_ws
@@ -89,7 +87,7 @@ In order to run the system, following steps are to be executed:
    ```bash
    $ roslaunch vrep_turtlebot_simulation vrep_turtlebot_rviz_launch.launch
    ```
-6. Run the node octomap for the first robot
+6. Open a new Terminal & Run the node octomap for the first robot
 
    ```bash
    $ cd coverage_ws
@@ -102,7 +100,7 @@ In order to run the system, following steps are to be executed:
    ```bash
    $ roslaunch turtlebot_robot_launchers vrep_octomap_turtlebot1.launch
    ```
-7. Run the node octomap for the second robot
+7. Open a new Terminal & Run the node octomap for the second robot
 
    ```bash
    $ cd coverage_ws
@@ -115,7 +113,7 @@ In order to run the system, following steps are to be executed:
    ```bash
    $ roslaunch turtlebot_robot_launchers vrep_octomap_turtlebot2.launch
    ```
-8. Run the node global mapping 
+8. Open a new Terminal & Run the node global mapping 
 
    ```bash
    $ cd coverage_ws
@@ -128,7 +126,7 @@ In order to run the system, following steps are to be executed:
    ```bash
    $ roslaunch ms_vrep_ros_simulation global_mapping.launch
    ```
-9. Run the node normal estimation for the first robot
+9. Open a new Terminal & Run the node normal estimation for the first robot
 
    ```bash
    $ cd coverage_ws
@@ -141,7 +139,7 @@ In order to run the system, following steps are to be executed:
    ```bash
    $ roslaunch turtlebot_robot_launchers turtlebot_normal_estimation_turtlebot1.launch
    ```
-10. Run the node normal estimation for the second robot
+10. Open a new Terminal & Run the node normal estimation for the second robot
 
       ```bash
       $ cd coverage_ws
@@ -154,7 +152,7 @@ In order to run the system, following steps are to be executed:
       ```bash
       $ roslaunch turtlebot_robot_launchers turtlebot_normal_estimation_turtlebot2.launch
       ```
-11. Run the node turtlebot traversability analysis for the first robot
+11. Open a new Terminal & Run the node turtlebot traversability analysis for the first robot
 
       ```bash
       $ cd coverage_ws
@@ -167,7 +165,7 @@ In order to run the system, following steps are to be executed:
       ```bash
       $ roslaunch turtlebot_robot_launchers turtlebot_traversability_analysis_turtlebot1.launch
       ```
-12. Run the node turtlebot traversability analysis for the second robot
+12. Open a new Terminal & Run the node turtlebot traversability analysis for the second robot
 
       ```bash
       $ cd coverage_ws
@@ -180,7 +178,7 @@ In order to run the system, following steps are to be executed:
       ```bash
       $ roslaunch turtlebot_robot_launchers turtlebot_traversability_analysis_turtlebot2.launch
       ```
-13. Run the node path planner for the first robot
+13. Open a new Terminal & Run the node path planner for the first robot
 
       ```bash
       $ cd coverage_ws
@@ -193,7 +191,7 @@ In order to run the system, following steps are to be executed:
       ```bash
       $ roslaunch turtlebot_robot_launchers turtlebot_path_planner_turtlebot1.launch
       ```
-14. Run the node path planner for the second robot
+14. Open a new Terminal & Run the node path planner for the second robot
 
       ```bash
       $ cd coverage_ws
@@ -206,7 +204,7 @@ In order to run the system, following steps are to be executed:
       ```bash
       $ roslaunch turtlebot_robot_launchers turtlebot_path_planner_turtlebot2.launch
       ```
-15. Run the node keyboard_teleop for steering the first robots through arrow keys
+15. Open a new Terminal & Run the node keyboard_teleop for steering the first robots through arrow keys
 
       ```bash
       $ cd coverage_ws
@@ -219,7 +217,7 @@ In order to run the system, following steps are to be executed:
       ```bash
       $ roslaunch turtlebot_teleop_keyboard keyboard_teleop_diff_drive_mux_turtlebot1.launch
       ```
-16. Run the node keyboard_teleop for steering the second robots through arrow keys
+16. Open a new Terminal & Run the node keyboard_teleop for steering the second robots through arrow keys
 
       ```bash
       $ cd coverage_ws
@@ -235,6 +233,7 @@ In order to run the system, following steps are to be executed:
 
 
 ## Main references 
+Recchiuto, Carmine & Nattero, Cristiano & Sgorbissa, Antonio & Zaccaria, Renato. (2014). "Coverage Algorithms for Search and Rescue with UAV Drones - abstract" C. Nattero, C.T. Recchiuto, A. Sgorbissa, R. Zaccaria, PISA 10-12 Dicember 2014. 
 
 
 
