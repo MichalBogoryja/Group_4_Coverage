@@ -32,7 +32,53 @@ In order to run the system, following steps are to be executed:
    $ roscore
    ```
 
-2. 
+2. Run V-REP
+
+   ```bash
+   $ cd <VREP_folder_path>/
+   ```
+
+   ```bash
+   $ ./vrep.sh
+   ```
+
+3. Run the node operating RGB point cloud for the first robot
+
+   ```bash
+   $ cd coverage_ws
+   ```
+
+   ```bash
+   $ source source_all.bash
+   ```
+
+   ```bash
+   $ roslaunch rgb_pcd_kinect_fusion rgb_pcd_kinect_fusion_turtlebot1.launch
+   ```
+
+4. sad
+
+5. dsadsa
+
+6. dssad
+
+7. dsadsa
+
+8. dsadsa
+
+9. dsadsa
+
+10. dsa
+
+11. dsadsa
+
+12. dsa
+
+13. dsadsa
+
+14. dsa
+
+
 
 ## Main references 
 
