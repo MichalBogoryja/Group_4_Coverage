@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+	<arg name="robot_name" default="turtlebot2" />
+  <arg name="respawn_value" default="false" /> <!-- boolean: true, false -->­
+      
+          <!-- normals computation -->
+  	<node name="compute_normals_$(arg robot_name)" pkg="path_planner" 
+type="compute_normals" respawn="$(arg respawn_value)" output="screen">
+	<rosparam file="$(find  
+turtlebot_robot_launchers)/config/traversability/path_planner_octomap_turtlebot2.yaml" /> 
+        <param name = "robot_frame_name" value = "/vrep/$(arg robot_name)/base_footprint"/>
+     	<param name = "laser_frame_name" value = "/vrep/$(arg robot_name)/kinect_depth"/>
+
+	<!-- Output -->
+	<remap from = "cloud_in" to = "/vrep/$(arg robot_name)/octomap"/>
+        
+        <!-- Output -->
+	<remap from = "cloud_out" to = "/vrep/$(arg robot_name)/local_map_normals"/>
+	<remap from = "/normals_marker" to = "/vrep/$(arg robot_name)/normal_markers"/>
+  </node> 
+</launch>
