@@ -25,7 +25,7 @@ Laptop with Linux:
 2. Create a catkin workspace - follow steps from: 
    1. http://wiki.ros.org/catkin/Tutorials/create_a_workspace
    2. http://wiki.ros.org/catkin/Tutorials/CreatingPackage <instead of calling package "beginner_tutorials" call it "my_dynamixel">
-3. download VREP simulation from: http://www.coppeliarobotics.com/downloads.html
+3. Download VREP simulation from: http://www.coppeliarobotics.com/downloads.html
 
 ## Running the system
 
