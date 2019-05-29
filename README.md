@@ -22,8 +22,7 @@ The aim of this project is to demonstrate multi-robot cooperation through a maze
 Laptop with Linux: 
 
 1. Install ROS kinetic - follow steps from: http://wiki.ros.org/kinetic/Installation/Ubuntu
-2. Create a catkin workspace - follow steps from: 
-   1. http://wiki.ros.org/catkin/Tutorials/create_a_workspace
+2. Create a catkin workspace - follow steps from: http://wiki.ros.org/catkin/Tutorials/create_a_workspace
 3. Download VREP simulation from: http://coppeliarobotics.com/files/V-REP_PRO_EDU_V3_5_0_Linux.tar.gz
 4. RVIZ - UserGuide of RVIZ: http://wiki.ros.org/rviz/UserGuide
 
