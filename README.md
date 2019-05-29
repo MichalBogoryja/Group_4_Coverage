@@ -11,8 +11,10 @@ The aim of this project is to
 ## System requirements
 
 • Ubuntu 16.04 LTS (Xenial Xerus)
+
 • ROS Kinetic  
 • V-REP PRO EDU 3.5.0 Linux 64
+
 • RVIZ
 
 
