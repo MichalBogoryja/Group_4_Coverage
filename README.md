@@ -25,8 +25,9 @@ Laptop with Linux:
 2. Create a catkin workspace - follow steps from: http://wiki.ros.org/catkin/Tutorials/create_a_workspace
 3. Download VREP simulation from: http://coppeliarobotics.com/files/V-REP_PRO_EDU_V3_5_0_Linux.tar.gz
 4. RVIZ - UserGuide of RVIZ: http://wiki.ros.org/rviz/UserGuide
-5. Prepare this repository
-   Gitclone this repository to the created workspace
+5. Prepare the repository
+   
+   Gitclone the repository to the created workspace
    ```bash
    $ cd coverage_ws
    ```
