@@ -140,17 +140,17 @@ In order to run the system, following steps are to be executed:
    ```
 10. Run the node normal estimation for the second robot
 
-   ```bash
-   $ cd coverage_ws
-   ```
+      ```bash
+      $ cd coverage_ws
+      ```
 
-   ```bash
-   $ source source_all.bash
-   ```
+      ```bash
+      $ source source_all.bash
+      ```
 
-   ```bash
-   $ roslaunch turtlebot_robot_launchers turtlebot_normal_estimation_turtlebot2.launch
-   ```
+      ```bash
+      $ roslaunch turtlebot_robot_launchers turtlebot_normal_estimation_turtlebot2.launch
+      ```
 11. Run the node turtlebot traversability analysis for the first robot
    
    ```bash
