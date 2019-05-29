@@ -1,0 +1,8 @@
+<launch>
+
+<arg name="robot_prefix1" default="turtlebot1"/>	
+
+<node pkg="turtlebot_teleop_keyboard" type="turtlebot_teleop_key_diff_drive_mux" name="turtlebot_teleop_key_diff_drive_mux_$(arg robot_prefix1)" output="screen">
+<remap from="/wheels_vel_cmd" to="/vrep/$(arg robot_prefix1)/wheels_vel_cmd"/>
+</node>
+</launch>
