@@ -56,28 +56,149 @@ In order to run the system, following steps are to be executed:
    $ roslaunch rgb_pcd_kinect_fusion rgb_pcd_kinect_fusion_turtlebot1.launch
    ```
 
-4. sad
+4. Run the node operating RGB point cloud for the second robot
 
-5. dsadsa
+   ```bash
+   $ cd coverage_ws
+   ```
 
-6. dssad
+   ```bash
+   $ source source_all.bash
+   ```
 
-7. dsadsa
+   ```bash
+   $ roslaunch rgb_pcd_kinect_fusion rgb_pcd_kinect_fusion_turtlebot2.launch
+   ```
+5. open the rviz
 
-8. dsadsa
+   ```bash
+   $ cd coverage_ws
+   ```
 
-9. dsadsa
+   ```bash
+   $ source source_all.bash
+   ```
 
-10. dsa
+   ```bash
+   $ roslaunch vrep_turtlebot_simulation vrep_turtlebot_rviz_launch.launch
+   ```
+6. Run the node octomap for the first robot
 
-11. dsadsa
+   ```bash
+   $ cd coverage_ws
+   ```
 
-12. dsa
+   ```bash
+   $ source source_all.bash
+   ```
 
-13. dsadsa
+   ```bash
+   $ roslaunch turtlebot_robot_launchers vrep_octomap_turtlebot1.launch
+   ```
+7. Run the node octomap for the second robot
 
-14. dsa
+   ```bash
+   $ cd coverage_ws
+   ```
 
+   ```bash
+   $ source source_all.bash
+   ```
+
+   ```bash
+   $ roslaunch turtlebot_robot_launchers vrep_octomap_turtlebot2.launch
+   ```
+8. Run the node global mapping 
+
+   ```bash
+   $ cd coverage_ws
+   ```
+
+   ```bash
+   $ source source_all.bash
+   ```
+
+   ```bash
+   $ roslaunch ms_vrep_ros_simulation global_mapping.launch
+   ```
+9. Run the node normal estimation for the first robot
+
+   ```bash
+   $ cd coverage_ws
+   ```
+
+   ```bash
+   $ source source_all.bash
+   ```
+
+   ```bash
+   $ roslaunch turtlebot_robot_launchers turtlebot_normal_estimation_turtlebot1.launch
+   ```
+10. Run the node normal estimation for the second robot
+
+   ```bash
+   $ cd coverage_ws
+   ```
+
+   ```bash
+   $ source source_all.bash
+   ```
+
+   ```bash
+   $ roslaunch turtlebot_robot_launchers turtlebot_normal_estimation_turtlebot2.launch
+   ```
+11. Run the node path planner for the first robot
+
+   ```bash
+   $ cd coverage_ws
+   ```
+
+   ```bash
+   $ source source_all.bash
+   ```
+
+   ```bash
+   $ roslaunch turtlebot_robot_launchers turtlebot_path_planner_turtlebot1.launch
+   ```
+12. Run the node path planner for the second robot
+
+   ```bash
+   $ cd coverage_ws
+   ```
+
+   ```bash
+   $ source source_all.bash
+   ```
+
+   ```bash
+   $ roslaunch turtlebot_robot_launchers turtlebot_path_planner_turtlebot2.launch
+   ```
+13. Run the node keyboard_teleop for steering the first robots through arrow keys
+
+   ```bash
+   $ cd coverage_ws
+   ```
+
+   ```bash
+   $ source source_all.bash
+   ```
+
+   ```bash
+   $ roslaunch turtlebot_teleop_keyboard keyboard_teleop_diff_drive_mux_turtlebot1.launch
+   ```
+14. Run the node keyboard_teleop for steering the second robots through arrow keys
+
+   ```bash
+   $ cd coverage_ws
+   ```
+
+   ```bash
+   $ source source_all.bash
+   ```
+
+   ```bash
+   $ roslaunch turtlebot_teleop_keyboard keyboard_teleop_diff_drive_mux_turtlebot2.launch
+   ```
 
 
 ## Main references 
