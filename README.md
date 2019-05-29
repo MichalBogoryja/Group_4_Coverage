@@ -12,20 +12,19 @@ The aim of this project is to demonstrate multi-robot cooperation through a maze
 • Ubuntu 16.04 LTS (Xenial Xerus)
 
 • ROS Kinetic  
-3
+
 • V-REP PRO EDU 3.5.0 Linux 64
 
 • RVIZ
-023
+
 ## Installation
 
 Laptop with Linux: 
 
 1. Install ROS kinetic - follow steps from: http://wiki.ros.org/kinetic/Installation/Ubuntu
-2. Create a catkin workspace - follow steps from: 
-   1. http://wiki.ros.org/catkin/Tutorials/create_a_workspace
-   2. http://wiki.ros.org/catkin/Tutorials/CreatingPackage <instead of calling package "beginner_tutorials" call it "my_dynamixel">
-3. 
+2. Create a catkin workspace - follow steps from: http://wiki.ros.org/catkin/Tutorials/create_a_workspace
+3. Download VREP simulation from: http://coppeliarobotics.com/files/V-REP_PRO_EDU_V3_5_0_Linux.tar.gz
+4. RVIZ - UserGuide of RVIZ: http://wiki.ros.org/rviz/UserGuide
 
 ## Running the system
 
