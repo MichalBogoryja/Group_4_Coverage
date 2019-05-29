@@ -10,6 +10,10 @@ The aim of this project is to
 
 ## System requirements
 
+• Ubuntu 16.04 LTS (Xenial Xerus)
+• ROS Kinetic  
+• V-REP PRO EDU 3.5.0 Linux 64
+• RVIZ
 
 
 ## Installation
@@ -147,7 +151,33 @@ In order to run the system, following steps are to be executed:
    ```bash
    $ roslaunch turtlebot_robot_launchers turtlebot_normal_estimation_turtlebot2.launch
    ```
-11. Run the node path planner for the first robot
+11. Run the node turtlebot traversability analysis for the first robot
+   
+   ```bash
+   $ cd coverage_ws
+   ```
+
+   ```bash
+   $ source source_all.bash
+   ```
+
+   ```bash
+   $ roslaunch turtlebot_robot_launchers turtlebot_traversability_analysis_turtlebot1.launch
+   ```
+12. Run the node turtlebot traversability analysis for the second robot
+    
+   ```bash
+   $ cd coverage_ws
+   ```
+
+   ```bash
+   $ source source_all.bash
+   ```
+
+   ```bash
+   $ roslaunch turtlebot_robot_launchers turtlebot_traversability_analysis_turtlebot2.launch
+   ```
+13. Run the node path planner for the first robot
 
    ```bash
    $ cd coverage_ws
@@ -160,7 +190,7 @@ In order to run the system, following steps are to be executed:
    ```bash
    $ roslaunch turtlebot_robot_launchers turtlebot_path_planner_turtlebot1.launch
    ```
-12. Run the node path planner for the second robot
+14. Run the node path planner for the second robot
 
    ```bash
    $ cd coverage_ws
@@ -173,7 +203,7 @@ In order to run the system, following steps are to be executed:
    ```bash
    $ roslaunch turtlebot_robot_launchers turtlebot_path_planner_turtlebot2.launch
    ```
-13. Run the node keyboard_teleop for steering the first robots through arrow keys
+15. Run the node keyboard_teleop for steering the first robots through arrow keys
 
    ```bash
    $ cd coverage_ws
@@ -186,7 +216,7 @@ In order to run the system, following steps are to be executed:
    ```bash
    $ roslaunch turtlebot_teleop_keyboard keyboard_teleop_diff_drive_mux_turtlebot1.launch
    ```
-14. Run the node keyboard_teleop for steering the second robots through arrow keys
+16. Run the node keyboard_teleop for steering the second robots through arrow keys
 
    ```bash
    $ cd coverage_ws
