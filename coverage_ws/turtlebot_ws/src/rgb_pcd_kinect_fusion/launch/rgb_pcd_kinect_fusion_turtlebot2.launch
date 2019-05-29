@@ -1,0 +1,12 @@
+<launch>
+	
+	<arg name="robot_prefix2" default="turtlebot2"/>
+
+	<node pkg="rgb_pcd_kinect_fusion" type="rgb_pcd_kinect_fusion" name="rgb_pcd_kinect_fusion_$(arg robot_prefix2)"  output="screen">
+		<param name="image_topic" value="/vrep/$(arg robot_prefix2)/rgb/image_rect_color" />
+		<param name="pcl_topic" value="/vrep/$(arg robot_prefix2)/depth/pcd"/>
+		<param name="pcd_color_topic" value="/vrep/$(arg robot_prefix2)/depth/pcd_colored" />
+		<param name="pcd_rect_topic" value="/vrep/$(arg robot_prefix2)/depth/pcd_rect"/>
+		<param name="far_clip" type="double" value="3.5" />
+	</node>
+</launch>
