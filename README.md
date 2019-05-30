@@ -44,7 +44,7 @@ Laptop with Linux:
    Compile turtlebot_simulation
     ```bash
    $ cd ~/turtlebot_simulation
-   ```
+    ```
    ```bash
    $ catkin_make 
    ```
@@ -76,6 +76,8 @@ In order to run the system, following steps are to be executed:
    $ ./vrep.sh
    ```
 
+   Open the V-REP scene  turtlebot_two_robots.ttt from *Group_4_Coverage\coverage_ws\V-REP Simulations* and press start.
+
 3. Open a new Terminal & Run the node operating RGB point cloud for the first robot
 
    ```bash
@@ -103,6 +105,7 @@ In order to run the system, following steps are to be executed:
    ```bash
    $ roslaunch rgb_pcd_kinect_fusion rgb_pcd_kinect_fusion_turtlebot2.launch
    ```
+
 5. Open a new Terminal & Run the rviz
 
    ```bash
@@ -116,6 +119,7 @@ In order to run the system, following steps are to be executed:
    ```bash
    $ roslaunch vrep_turtlebot_simulation vrep_turtlebot_rviz_launch.launch
    ```
+
 6. Open a new Terminal & Run the node octomap for the first robot
 
    ```bash
@@ -129,6 +133,7 @@ In order to run the system, following steps are to be executed:
    ```bash
    $ roslaunch turtlebot_robot_launchers vrep_octomap_turtlebot1.launch
    ```
+
 7. Open a new Terminal & Run the node octomap for the second robot
 
    ```bash
@@ -142,6 +147,7 @@ In order to run the system, following steps are to be executed:
    ```bash
    $ roslaunch turtlebot_robot_launchers vrep_octomap_turtlebot2.launch
    ```
+
 8. Open a new Terminal & Run the node global mapping 
 
    ```bash
@@ -155,6 +161,7 @@ In order to run the system, following steps are to be executed:
    ```bash
    $ roslaunch ms_vrep_ros_simulation global_mapping.launch
    ```
+
 9. Open a new Terminal & Run the node normal estimation for the first robot
 
    ```bash
@@ -168,6 +175,7 @@ In order to run the system, following steps are to be executed:
    ```bash
    $ roslaunch turtlebot_robot_launchers turtlebot_normal_estimation_turtlebot1.launch
    ```
+
 10. Open a new Terminal & Run the node normal estimation for the second robot
 
       ```bash
@@ -181,6 +189,7 @@ In order to run the system, following steps are to be executed:
       ```bash
       $ roslaunch turtlebot_robot_launchers turtlebot_normal_estimation_turtlebot2.launch
       ```
+
 11. Open a new Terminal & Run the node turtlebot traversability analysis for the first robot
 
       ```bash
@@ -194,6 +203,7 @@ In order to run the system, following steps are to be executed:
       ```bash
       $ roslaunch turtlebot_robot_launchers turtlebot_traversability_analysis_turtlebot1.launch
       ```
+
 12. Open a new Terminal & Run the node turtlebot traversability analysis for the second robot
 
       ```bash
@@ -207,6 +217,7 @@ In order to run the system, following steps are to be executed:
       ```bash
       $ roslaunch turtlebot_robot_launchers turtlebot_traversability_analysis_turtlebot2.launch
       ```
+
 13. Open a new Terminal & Run the node path planner for the first robot
 
       ```bash
@@ -220,6 +231,7 @@ In order to run the system, following steps are to be executed:
       ```bash
       $ roslaunch turtlebot_robot_launchers turtlebot_path_planner_turtlebot1.launch
       ```
+
 14. Open a new Terminal & Run the node path planner for the second robot
 
       ```bash
@@ -233,6 +245,7 @@ In order to run the system, following steps are to be executed:
       ```bash
       $ roslaunch turtlebot_robot_launchers turtlebot_path_planner_turtlebot2.launch
       ```
+
 15. Open a new Terminal & Run the node keyboard_teleop for steering the first robots through arrow keys
 
       ```bash
@@ -246,6 +259,7 @@ In order to run the system, following steps are to be executed:
       ```bash
       $ roslaunch turtlebot_teleop_keyboard keyboard_teleop_diff_drive_mux_turtlebot1.launch
       ```
+
 16. Open a new Terminal & Run the node keyboard_teleop for steering the second robots through arrow keys
 
       ```bash
