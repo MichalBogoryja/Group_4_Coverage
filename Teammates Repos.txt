@@ -1,0 +1,4 @@
+Links to other (teammates) repositories
+
+Augmented Reality Mobile Video game 'NINJA SHINE' - https://github.com/Luddzik/Yipikaye
+Multi-robot Cooperation through a Maze in the VREP - https://github.com/MichalBogoryja/Group_4_Coverage
